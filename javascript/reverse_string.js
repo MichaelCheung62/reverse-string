@@ -1,16 +1,20 @@
 function reverseString(str) {
-  // type your code here
+  newString = '';
+
+  for (let i = 0; i < str.length; i--) newString += str[i];
+
+  return newString;
 }
 
 if (require.main === module) {
   // add your own tests in here
   console.log("Expecting: 'ih'");
-  console.log("=>", reverseString("hi"));
+  console.log('=>', reverseString('hi'));
 
-  console.log("");
+  console.log('');
 
   console.log("Expecting: 'ybabtac'");
-  console.log("=>", reverseString("catbaby"));
+  console.log('=>', reverseString('catbaby'));
 }
 
 module.exports = reverseString;
